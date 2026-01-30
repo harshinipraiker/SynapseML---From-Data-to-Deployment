@@ -1,0 +1,16 @@
+digraph ML_Lifecycle_Flow {
+	graph [nodesep=0.5 rankdir=LR splines=ortho]
+	A [label="Input
+Dataset" fillcolor="#a7c7e7" shape=cylinder style=filled]
+	B [label="{ Preprocessing\n\n• Num Pipeline: SimpleImputer -> StandardScaler\l }" fillcolor="#fdfd96" shape=record style="rounded,filled"]
+	C [label="Model Training
+(Linear Regression)" fillcolor="#ffb347" shape=box3d style=filled]
+	D [label="Evaluation
+(Metrics & SHAP)" fillcolor="#77dd77" shape=Mdiamond style=filled]
+	E [label="Deployment
+(Save to MLflow)" fillcolor="#c3b1e1" shape=cds style=filled]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+}

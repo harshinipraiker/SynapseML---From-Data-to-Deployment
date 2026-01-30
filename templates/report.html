@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AutoML Report</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 40px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .summary {
+        background-color: #e6f7ff;
+        border-left: 5px solid #1890ff;
+        padding: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AutoML Analysis Report</h1>
+
+    <div class="summary">
+      <h2>Analysis Summary</h2>
+      <p><strong>Task Detected:</strong> {{ task_type }}</p>
+      <p><strong>Best Performing Model:</strong> {{ best_model }}</p>
+      <p><strong>Evaluation Metric:</strong> {{ metric_name }}</p>
+      <p><strong>Best Model Score:</strong> {{ "%.4f"|format(best_score) }}</p>
+    </div>
+
+    <h2>Model Performance Comparison</h2>
+    <table>
+      <tr>
+        <th>Model</th>
+        <th>{{ metric_name }}</th>
+      </tr>
+      {% for model, score in model_performance.items() %}
+      <tr>
+        <td>{{ model }}</td>
+        <td>{{ "%.4f"|format(score) }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

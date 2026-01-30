@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/sowmy/Downloads/SynapseML - package code/automl_software/mlruns/4/models/m-2241facec89d4d629f250cf71b4f0662/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.4
+model_id: m-2241facec89d4d629f250cf71b4f0662
+model_size_bytes: 2883
+model_uuid: m-2241facec89d4d629f250cf71b4f0662
+prompts: null
+run_id: e62f6dc551a547afaf2fc8da1fe07d82
+utc_time_created: '2025-11-05 16:13:32.633716'

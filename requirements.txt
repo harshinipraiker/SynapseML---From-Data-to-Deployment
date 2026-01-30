@@ -1,0 +1,41 @@
+# Core Web Stack
+fastapi
+uvicorn[standard]
+streamlit
+requests
+
+# Task Queue for Scalability
+celery
+redis
+
+# Machine Learning & Pipelines
+scikit-learn
+pandas
+xgboost
+joblib
+
+# Experiment Tracking & Governance
+mlflow
+fairlearn
+sqlalchemy
+
+# GenAI & Unstructured Data
+langchain
+langchain-community
+huggingface_hub
+transformers
+torch
+sentence-transformers
+pypdf
+unstructured
+chromadb
+
+# Explainability
+shap
+matplotlib
+seaborn
+
+# Reporting & Notebooks
+Jinja2
+WeasyPrint
+nbformat

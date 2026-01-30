@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/Harshu/automl_software/mlruns/3/models/m-8314fa0074ba486291c362bb5015a3df/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+mlflow_version: 3.1.0
+model_id: m-8314fa0074ba486291c362bb5015a3df
+model_size_bytes: 6798508
+model_uuid: m-8314fa0074ba486291c362bb5015a3df
+prompts: null
+run_id: 741990da273c47f5988946b5084d10ba
+utc_time_created: '2025-06-24 15:47:00.904683'
